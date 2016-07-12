@@ -1,0 +1,6 @@
+---
+
+- name: Installs the ppa:ondrej/php repo on Ubuntu systems
+  apt_repository:
+    repo: ppa:ondrej/php
+    update_cache: "{{ update_apt_cache }}"

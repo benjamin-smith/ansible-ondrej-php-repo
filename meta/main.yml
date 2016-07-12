@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: Benjamin Smith
+  description: Installs the ppa:ondrej/php repo on Ubuntu systems
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+    versions:
+      - all
+  categories:
+    - web
+dependencies: []
+
