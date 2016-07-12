@@ -1,6 +1,6 @@
 # Ansible ondrej/php repository role
 
-Installs the [ondrej/php] repo on Ubuntu systems.(https://launchpad.net/~ondrej/+archive/ubuntu/php).
+Installs the [ondrej/php](https://launchpad.net/~ondrej/+archive/ubuntu/php) repo on Ubuntu systems.
 
 ### Requirements
 
