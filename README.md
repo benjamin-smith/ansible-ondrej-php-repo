@@ -1,7 +1,5 @@
 # Ansible ondrej/php repository role
 
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-apt-blue.svg)](https://galaxy.ansible.com/benjamin-smith/ondrej-php-repo/)
-
 Installs the [ondrej/php](https://launchpad.net/~ondrej/+archive/ubuntu/php) repo on Ubuntu systems.
 
 ### Requirements
