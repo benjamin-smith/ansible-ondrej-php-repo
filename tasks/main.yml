@@ -1,6 +1,20 @@
 ---
-
 - name: Installs the ppa:ondrej/php repo on Ubuntu systems
   apt_repository:
     repo: ppa:ondrej/php
     update_cache: "{{ update_apt_cache }}"
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Installs the sury php repo on Debian systems
+  apt_repository:
+    repo: deb https://packages.sury.org/php/ {{ ansible_distribution_release }} main
+    state: present
+    filename: sury_php
+    update_cache: "{{ update_apt_cache }}"
+  when: ansible_distribution == 'Debian'
+
+- name: Import ssh key
+  apt_key:
+    url: https://packages.sury.org/php/apt.gpg
+  when: ansible_distribution == 'Debian'
+
